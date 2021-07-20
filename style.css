@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+body{
+    background-image: linear-gradient(to right, #EE82EE, #430a64 );
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container-tarefas{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+}
+
+.tarefas{
+    padding: 3rem;
+}
+
+#txt-tarefa{
+    margin-top: 0.5rem;
+    height: 2.5rem;
+    width: 30rem;
+    border: none;
+    font-weight: bold;
+}
+
+#txt-tarefa::placeholder{
+    text-align: center;
+    font-size: 1rem;
+    border-radius: 1rem;
+    color: #430a64;
+}
+
+#txt-tarefa:focus{
+    outline: none;
+}
+
+#btn-tarefa{
+    height: 2.5rem;
+    width: 4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: #430a64;
+    font-weight: bold;
+}
+
+#btn-tarefa:hover{
+    background-color: #430a64;
+    color: #fff;
+}
+
+.task{
+    list-style: none;
+    padding: 1rem;
+}
+
+.tarefa-1{
+    margin-bottom: 1rem;
+    height: 2.4rem;
+    line-height: 2.4rem;
+    width: 30rem;
+    font-weight: bold;
+    color: #430a64;
+    text-align: start;
+    padding-left: 1rem;
+    align-items: center;
+    background-color: white;
+    position: relative;
+}
+
+.tarefa-1 ion-icon{
+    position: absolute;
+    top: 0;
+    height: 1.7rem;
+    width: 1.5rem;
+    cursor: pointer;
+    transition: 0.5s;
+    padding: 5px;
+    font-size: 1.2rem;
+}
+
+#btn-feito{
+    right: 2.1rem;
+}
+
+#btn-feito:hover{
+    background-color: #09e01b;
+    color: #fff;
+    height: 1.75rem;
+}
+
+#btn-fechar{
+    right: 0;
+}
+
+#btn-fechar:hover{
+    background-color: #ed0927;
+    color: #fff;
+    height: 1.75rem;
+}
+
+.hide{
+    display: none;
+}
+
+.done{
+    background-color: #430a64;
+    color: #fff;
+    text-decoration: line-through;
+}
